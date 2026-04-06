@@ -1,0 +1,13 @@
+*{ 
+    box-sizing: border-box ;
+    padding: 0px  ;
+    margin: 0px ;
+    border: 0px ;
+}
+a{
+    text-decoration: none ;
+    color: inherit ;
+}
+ul, menu{
+    list-style: none ;
+}
