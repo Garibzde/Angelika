@@ -347,31 +347,3 @@ body.menu-open {
 .text-boz{
   color: #9b9ba6;
 }
-.text-head{
-  color: #fff;
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-}
-.text-body{
-  color:#fff;
-  font: 24px "Inter", sans-serif;
-  margin-bottom: 12px;
-}
-.rigth-brd{
-  border-right: 1px solid #6e6e72;
-  padding: 16px;
-}
-.text-b{
-  color: #93939f;
-  font-size: 14px;
-  line-height: 1.5;
-
-}
-.p{
-  padding:32px;
-  margin-bottom: 24px;
-}
