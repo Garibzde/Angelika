@@ -37,7 +37,9 @@
 
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/slider.css" />
     <link href="../src/output.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
   <body class="bg-[#242429] text-white font-sans antialiased">
     <header
@@ -973,6 +975,7 @@
                 media="(max-width: 767px)"
                 srcset="
                   https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/480_1100_2/dizayn_domov_01.jpg
+
                 "
                 type="image/jpeg"
               />
@@ -983,23 +986,17 @@
                 "
                 type="image/jpeg"
               />
-              <source
-                media="(max-width: 1450px)"
-                srcset="
-                  https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/1400_1400_2/dizayn_domov_01.jpg
-                "
-                type="image/jpeg"
-              />
+              
               <source
                 media="(min-width: 1451px)"
                 srcset="
-                  https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/1920_1280_1/dizayn_domov_01.jpg
+                  https://angelika-prudnikova.design/upload/medialibrary/0bc/4n3sg8uk1ht2ay74xr2rwbeixxun4mvw/slideshow_note_3_1.jpg
                 "
                 type="image/jpeg"
               />
               <img
                 itemprop="contentUrl"
-                src="https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/1920_1280_1/dizayn_domov_01.jpg"
+                src="https://angelika-prudnikova.design/upload/medialibrary/618/mnsjb53sh17hjvl9j10wr4iv45zhiwf4/slideshow_3_1.jpg"
                 alt="Дизайн интерьера"
                 class="w-full h-full object-cover object-center"
               />
@@ -1009,67 +1006,53 @@
           <div
             class="slideshow slideshow_zoom zoom bottom absolute inset-0 w-full h-full"
             data-slides='[
-                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/1920_1280_1/dizayn_domov_01.jpg","img_n":"https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/1400_1400_2/dizayn_domov_01.jpg","img_t":"https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/890_1280_2/dizayn_domov_01.jpg","img_m":"https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/480_1100_2/dizayn_domov_01.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/ac8/6p6a7lts35agwhgtwcnnbfa3z5zb8lpv/1920_1280_2/dizayn_domov_02.jpg","img_n":"https://angelika-prudnikova.design/upload/resize_cache/iblock/ac8/6p6a7lts35agwhgtwcnnbfa3z5zb8lpv/1400_1400_2/dizayn_domov_02.jpg","img_t":"https://angelika-prudnikova.design/upload/resize_cache/iblock/ac8/6p6a7lts35agwhgtwcnnbfa3z5zb8lpv/890_1280_2/dizayn_domov_02.jpg","img_m":"https://angelika-prudnikova.design/upload/resize_cache/iblock/ac8/6p6a7lts35agwhgtwcnnbfa3z5zb8lpv/480_1100_2/dizayn_domov_02.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/098/fpi2hapehy9pifmemu52qpe7zp65n5s0/1920_1280_2/dizayn_domov_03.jpg","img_n":"https://angelika-prudnikova.design/upload/resize_cache/iblock/098/fpi2hapehy9pifmemu52qpe7zp65n5s0/1400_1400_2/dizayn_domov_03.jpg","img_t":"https://angelika-prudnikova.design/upload/resize_cache/iblock/098/fpi2hapehy9pifmemu52qpe7zp65n5s0/890_1280_2/dizayn_domov_03.jpg","img_m":"https://angelika-prudnikova.design/upload/resize_cache/iblock/098/fpi2hapehy9pifmemu52qpe7zp65n5s0/480_1100_2/dizayn_domov_03.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/518/1y53heixtt8o392415xsujrfv15lsn01/1920_1280_2/dizayn_domov_04.jpg","img_n":"https://angelika-prudnikova.design/upload/resize_cache/iblock/518/1y53heixtt8o392415xsujrfv15lsn01/1400_1400_2/dizayn_domov_04.jpg","img_t":"https://angelika-prudnikova.design/upload/resize_cache/iblock/518/1y53heixtt8o392415xsujrfv15lsn01/890_1280_2/dizayn_domov_04.jpg","img_m":"https://angelika-prudnikova.design/upload/resize_cache/iblock/518/1y53heixtt8o392415xsujrfv15lsn01/480_1100_2/dizayn_domov_04.jpg","process":"fstb"}
-                  ]'
-            data-lazy="1"
-            data-hide=".head-image"
-          ></div>
+                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/f4f/vvsdbj8w339d159xogb3pj9iaap0enb7/slider_2_7.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/944/am7zqonxz37njk97f6guyyf9io96rd4n/slider_2_4.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/5e5/z1jhpm2b53wm06gh3w3rpbwji6y92jed/slider_2_1.jpg","process":"fstb"}
+                  ]'   ></div>
 
           <div class="absolute inset-0 bg-black/40 z-[1]"></div>
 
           <div
             class="head-heading center big absolute inset-0 z-[2] flex items-end justify-center pb-16"
           >
-            <div class="head-heading-container text-center px-6">
-              <h3
-                class="tracking-[0.3em] uppercase mb-2 text-[18px] lg:text-[24px]"
-              >
-                Luxury
-              </h3>
+            <div class="absolute inset-0 bg-black/40 z-[1]"></div>
 
-              <h1 class="">
-                <span
-                  class="font-light text-[clamp(40px,7vw,90px)] leading-[1.1] tracking-[0.03em] text-white mb-6"
+            <div
+                class="head-heading center big absolute inset-0 z-[2] flex items-end justify-center pb-16"
+            >
+                <div class="head-heading-container text-center px-6">
+                <h3
+                    class="tracking-[0.3em] uppercase mb-2 text-[18px] lg:text-[24px]"
                 >
-                  Интерьер Вашей мечты </span
-                ><br />
-                <span
-                  class="tracking-[0.3em] uppercase mb-4 text-[18px] text-gray-200 lg:text-[24px]"
-                >
-                  Здесь и сейчас
+                    Lüks İnteryer Dizaynı
+                </h3>
+
+                <h1 class="">
+                    <span
+                    class="font-light text-[clamp(40px,7vw,90px)] leading-[1.1] tracking-[0.03em] text-white "
+                    >
+                    Şirkət haqqında
+
+
                 </span>
-              </h1>
+                </h1>
 
-              <div class="head-heading-signature flex justify-center mb-4">
-                <img
-                  src="../assets/img/signature-light.svg"
-                  width="290"
-                  height="94"
-                  alt="signature"
-                  class="opacity-80"
-                />
-              </div>
 
-              <div
-                class="head-heading-btns flex items-center justify-center gap-4"
-              >
-                <a
-                  href="#project"
-                  class="inline-flex items-center h-[52px] px-10 text-[11px] font-medium tracking-[0.12em] uppercase text-white rounded-3xl bg-[#1a6fa8] hover:bg-[#1a6fa8]/80 no-underline transition-colors duration-200"
+                <div
+                    class=" flex items-center justify-center  pt-3"
                 >
-                  Проекты
-                </a>
-                <a
-                  id="brd"
-                  href="#price"
-                  class="inline-flex items-center justify-center h-[52px] px-10 text-[12px] font-semibold tracking-[0.14em] uppercase text-white border border-white/60 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
-                >
-                  ЦЕНЫ
-                </a>
-              </div>
+                    <a
+                    href="#project"
+                    class="inline-flex items-center h-[52px] px-10 text-[11px] font-medium tracking-[0.12em] uppercase text-white rounded-3xl bg-[#1a6fa8] hover:bg-[#1a6fa8]/80 no-underline transition-colors duration-200"
+                    >
+                    Layihələr
+                    </a>
+                    
+                </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -1083,19 +1066,244 @@
                     <div class="flex items-center gap-4 py-6 px-6">
                         <a href="../index.htm"
                           class="flex items-center justify-center rounded-full text-white hover:text-gray-500 hover:scale-110 transition duration-300">
-                          <i class="fa-solid fa-house"></i>
-                        </a>
+                          <i class="fa-solid fa-house"></i>                        </a>
                         <span class="text-gray-600 text-[10px] md:text-[12px] font-light">
-                            Əlaqələr
+                           | Şirkət haqqında
                         </span>
                     </div>
 
                 </div>
 
             </section>
-            
-          
+            <!--about-->
+      <section class="relative z-20 w-full bg-[#303036] text-center">
+        <div
+          class="max-w-[1200px] mx-auto px-6 py-28 md:py-36 flex flex-col items-center"
+        >
+          <h2
+            class="text-white uppercase tracking-[0.08em] font-bold text-[28px] md:text-[42px] leading-[1.2]  "
+          >
+            Angelika Prudnikovanın  haqqında
+          </h2>
+          <span class="text-white/80 text-[14px] md:text-[16px] tracking-[0.1em] uppercase mt-6 mb-10 block">
+Eksklüziv dünya səviyyəli dizayn layihələri</span>
 
+          <div class="w-16 h-[1px] bg-white/40 my-6"></div>
+
+          <p class="text-white text-[16px] md:text-[18px] leading-[1.9]">
+            Angelika Prudnikovanın studiyası dəbdəbəli interyer və eksteryer layihələri yaradır və həyata keçirir. 25 il ərzində toplanmış geniş təcrübəmiz bizə yaşayış mənzilləri, evlər və ictimai məkanlar üçün yüksək keyfiyyətli 3D interyer dizayn layihələrini, həmçinin bağ evləri, yaşayış evləri, eksteryerlər və otellər üçün memarlıq layihələri və 3D rekonstruksiyalarını təqdim etməyə imkan verir. Həm böyük, həm də kiçik memarlıq xüsusiyyətləri üçün 3D landşaft dizaynını da təklif edirik!
+          </p>
+
+          <a
+            href="#"
+            class="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/10 text-white text-[13px] tracking-[0.12em] uppercase hover:bg-white hover:text-black transition-all duration-300"
+          >
+            ПОСМОТРЕТЬ ПРИМЕРЫ
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+      <!--slider-->
+
+      <section class="bg-[#242429] relative z-20 ">
+         <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/f4f/vvsdbj8w339d159xogb3pj9iaap0enb7/slider_2_7.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/5e5/z1jhpm2b53wm06gh3w3rpbwji6y92jed/slider_2_1.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/e3d/84ycl0l3n7hkseajzgvjm1nj9h611jto/slider_2_2.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/737/u46vz94uh3e136mmc7y3l74tzrvv7v5w/slider_2_3.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/944/am7zqonxz37njk97f6guyyf9io96rd4n/slider_2_4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next color"></div>
+        <div class="swiper-button-prev color"></div>
+      </div>
+      </section>
+
+      <!--projects-->
+      <section class="bg-[#242429] relative z-20">
+        <div class="pt-16 pb-16">
+          <div class="max-w-[1300px] mx-auto px-6">
+            <div class="text-center mb-12 md:mb-[144px]">
+              <h2
+                class="font-bold text-[clamp(24px,4vw,48px)] tracking-[0.08em] uppercase pt-6 text-white"
+              >
+                İnteryer dizayn qiymətləri
+              </h2>
+              <p
+                class="text-[16px] tracking-[0.25em] uppercase text-white/40 mt-3"
+              >
+                layihələrin növləri
+
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+
+              <a
+                href="/dizajn-portfolio/realizovannye-obekty"
+                class="direction-item group relative overflow-hidden block md:col-span-2"
+              >
+                <div class="bg-[#18181b] text-center px-6 pt-6 pb-6">
+                  <h3
+                    class="text-white text-[16px] md:text-[22px] font-bold uppercase tracking-[0.04em]"
+                  >
+                    Дизайн-проект «Всё включено»
+                  </h3>
+
+                  <p
+                    class="mt-2 text-white/40 text-[22px] md:text-[28px] font-light uppercase"
+                  >
+                    Индивидуально
+                  </p>
+                </div>
+                <div class="relative overflow-hidden">
+                  <img
+                    src="../assets/img/all.jpg"
+                    alt="Реализованные объекты"
+                    class="w-full h-full object-cover transition-transform duration-[8000ms] ease-out group-hover:scale-150"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#242429] via-[#242429]/20 to-transparent flex flex-col justify-end items-center text-center pl-6 py-6"
+                  >
+                    <span
+                      id="brd"
+                      class="flex items-center text-center justify-center h-[52px] px-10 text-[12px] font-semibold tracking-[0.14em] uppercase text-white border border-white/60 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
+                    >
+                      Подробнее
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--photo-->
+        <section
+      class="sticky top-0 w-full h-screen overflow-hidden bg-[#242429] z-10"
+    >
+      <div class="absolute inset-0 w-full h-full">
+        <img
+          src="https://angelika-prudnikova.design/upload/medialibrary/7ac/2ac9tfbze7x5m1p0qfvbuc35cwfoo8sc/imageshow_1.jpg"
+          alt="О компании"
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      <div class="absolute inset-0 bg-black/30"></div>
+    </section>    
+   <!--  <section class="relative w-full bg-[#26262a] pt-20 pb-8 font-sans overflow-hidden  z-20">
+  
+  <div class="text-center px-4 mb-24">
+    <span class="text-white/70 text-[14px] tracking-[0.4em] uppercase font-medium">Luxury</span>
+    <h2 class="text-white uppercase font-bold text-[32px] md:text-[54px] leading-[1.1] mt-6 mb-4">
+      Интерьеры и <br class="hidden md:block" /> экстерьеры
+    </h2>
+    <span class="text-white/50 text-[14px] tracking-[0.3em] uppercase">Премиум-класса</span>
+  </div>
+
+  <div class="max-w-[1200px] mx-auto px-6 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x divide-white/20">
+
+      <div class="md:pr-12 text-left">
+        <div class="text-white text-[56px] font-bold leading-none mb-2">25</div>
+        <div class="text-white text-[14px] font-bold uppercase tracking-wider mb-5">Лет работы</div>
+        <p class="text-[#a0a0a5] text-[15px] leading-relaxed">
+          Студия Анжелики Прудниковой успешно работает на российском рынке с 2000 года.
+        </p>
+      </div>
+
+      <div class="md:px-12 text-left">
+        <div class="text-white text-[56px] font-bold leading-none mb-2">2500+</div>
+        <div class="text-white text-[14px] font-bold uppercase tracking-wider mb-5">Объектов в портфолио</div>
+        <p class="text-[#a0a0a5] text-[15px] leading-relaxed">
+          Мы спроектировали тысячи домов, квартир и общественных помещений премиум-класса.
+        </p>
+      </div>
+
+      <div class="md:pl-12 text-left">
+        <div class="text-white text-[42px] md:text-[48px] font-bold leading-none mb-2 md:mt-2 uppercase">Проекты</div>
+        <div class="text-white text-[14px] font-bold uppercase tracking-wider mb-5">По всему миру</div>
+        <p class="text-[#a0a0a5] text-[15px] leading-relaxed">
+          Мы создаем проекты в России и СНГ, странах Ближнего Востока, Европы и Америки.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="relative w-full border-t border-white/20 mt-20 pt-6 pb-2">
+   
+
+    <div class="w-full text-center px-4 mt-8 md:mt-0">
+      <p class="text-[#88888e] italic text-[17px] font-serif tracking-wide">
+        Каждый месяц мы публикуем на сайте новые дизайн-проекты из портфолио студии.
+      </p>
+    </div>
+  </div>
+  
+</section> -->
+          
+<section class="relative z-20 w-full bg-[#303036] text-center">
+        <div
+          class="max-w-[1200px] mx-auto px-4 py-28  flex flex-col items-center"
+        >
+           <div class="text-center p  mb-24">
+      <span class="text-white/70 text-[32px] tracking-[0.4em] uppercase font-medium">Luxury</span>
+      <h2
+            class="text-white uppercase tracking-[0.08em] font-bold  leading-[1.2] text-head "
+          >
+            Angelika Prudnikovanın  haqqında
+          </h2>
+      <span class="text-white/50 text-[14px] tracking-[0.3em] uppercase m-16">Премиум-класса</span>
+    </div>
+
+    <div class="flex justify-center text-start gap-10 ">
+    <div class="rigth-brd">
+      <h2 class="text-head">25</h2>
+      <p class="text-body">Лет работы</p>
+      <span class="text-b">Студия Анжелики Прудниковой успешно работает на российском рынке с 2000 года.</span>
+    </div>
+    <div class="rigth-brd">
+      <h2 class="text-head">2500+</h2>
+      <p class="text-body">Объектов в портфолио</p>
+      <span class="text-b">Мы спроектировали тысячи домов, квартир и общественных помещений премиум-класса.</span>
+    </div>
+    <div class="p-4">
+      <h2 class="text-head">Проекты</h2>
+      <p class="text-body">По всему миру</p>
+      <span class="text-b">Мы создаем проекты в России и СНГ, странах Ближнего Востока, Европы и Америки.</span>
+    </div>
+
+    </div>
+
+          <div class="w-full h-[1px] bg-white/40 my-6"></div>
+
+          <p class="text-white/40 text-[16px] md:text-[18px]  italic font-serif tracking-wide">
+          Каждый месяц мы публикуем на сайте новые дизайн-проекты из портфолио студии.
+
+          </p>
+          <div class="w-full h-[1px] bg-white/40 my-6"></div>
+          <p class="text-white text-[28px] font-bold  tracking-wide">
+              Новинки из портфолио
+
+          </p>
+          <a
+            href="#"
+            class="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/10 text-white text-[13px] tracking-[0.12em] uppercase hover:bg-white hover:text-black transition-all duration-300"
+          >
+            ПОСМОТРЕТЬ ПРИМЕРЫ
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
        
 
       <!--contact-->
@@ -1710,5 +1918,7 @@
 
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/slideshow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
   </body>
 </html>
