@@ -34,10 +34,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
 
     <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/slider.css" />
+    <link rel="stylesheet" href="../assets/css/fancy.css" />
     <link href="../src/output.css" rel="stylesheet" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
@@ -154,7 +159,7 @@
               <!-- О компании -->
               <li class="relative group" role="none">
                 <a
-                  href="../html/aboute.htm"
+                  href="aboute.htm"
                   class="nav-link"
                   aria-haspopup="true"
                   aria-controls="menu-about"
@@ -164,7 +169,7 @@
               </li>
 
               <li role="none">
-                <a href="../html/contact.htm" role="menuitem" class="nav-link"
+                <a href="contact.htm" role="menuitem" class="nav-link"
                   >Контакты</a
                 >
               </li>
@@ -974,29 +979,27 @@
               <source
                 media="(max-width: 767px)"
                 srcset="
-                  https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/480_1100_2/dizayn_domov_01.jpg
-
-                "
+                  https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/430_800_2/1.jpg"
                 type="image/jpeg"
               />
               <source
                 media="(max-width: 1099px)"
                 srcset="
-                  https://angelika-prudnikova.design/upload/resize_cache/iblock/aab/6qrmtq8j5ekjpxdtukd1n0q4neel3puq/890_1280_2/dizayn_domov_01.jpg
-                "
+                  https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/890_1280_2/1.jpg"
+
                 type="image/jpeg"
               />
               
               <source
                 media="(min-width: 1451px)"
                 srcset="
-                  https://angelika-prudnikova.design/upload/medialibrary/0bc/4n3sg8uk1ht2ay74xr2rwbeixxun4mvw/slideshow_note_3_1.jpg
+                  https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/1920_1280_1/1.jpg
                 "
                 type="image/jpeg"
               />
               <img
                 itemprop="contentUrl"
-                src="https://angelika-prudnikova.design/upload/medialibrary/618/mnsjb53sh17hjvl9j10wr4iv45zhiwf4/slideshow_3_1.jpg"
+                src="https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/1920_1280_1/1.jpg"
                 alt="Дизайн интерьера"
                 class="w-full h-full object-cover object-center"
               />
@@ -1006,10 +1009,10 @@
           <div
             class="slideshow slideshow_zoom zoom bottom absolute inset-0 w-full h-full"
             data-slides='[
-                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/f4f/vvsdbj8w339d159xogb3pj9iaap0enb7/slider_2_7.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/944/am7zqonxz37njk97f6guyyf9io96rd4n/slider_2_4.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg","process":"fstb"},
-                    {"img":"https://angelika-prudnikova.design/upload/medialibrary/5e5/z1jhpm2b53wm06gh3w3rpbwji6y92jed/slider_2_1.jpg","process":"fstb"}
+                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/1920_1280_1/1.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/7d2/fugptc5cp9xdiwbm1040yhezz7hz2l20/1920_1280_1/2.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/288/jx3u6qfnlcpufb6vttad9dde8uwftkxp/1920_1280_1/3.jpg","process":"fstb"},
+                    {"img":"https://angelika-prudnikova.design/upload/resize_cache/iblock/fbf/1v26xi0cmshs11el0nptquwuf22vs1t4/1920_1280_1/4.jpg","process":"fstb"}
                   ]'   ></div>
 
           <div class="absolute inset-0 bg-black/40 z-[1]"></div>
@@ -1020,11 +1023,11 @@
             <div class="absolute inset-0 bg-black/40 z-[1]"></div>
 
             <div
-                class="head-heading center big absolute inset-0 z-[2] flex items-end justify-center pb-16"
+                class="head-heading center big absolute inset-0 z-[2] flex items-end justify-start  pb-16"
             >
-                <div class="head-heading-container text-center px-6">
+                <div class="head-heading-container text-start  p-6">
                 <h3
-                    class="tracking-[0.3em] uppercase mb-2 text-[18px] lg:text-[24px]"
+                    class="tracking-[0.3em] uppercase mb-2  text-[18px] lg:text-[24px]"
                 >
                     Lüks İnteryer Dizaynı
                 </h3>
@@ -1041,7 +1044,7 @@
 
 
                 <div
-                    class=" flex items-center justify-center  pt-3"
+                    class=" flex items-center justify-start  pt-3"
                 >
                     <a
                     href="#project"
@@ -1075,49 +1078,22 @@
                 </div>
 
             </section>
-            <!--about-->
-      <section class="relative z-20 w-full bg-[#303036] text-center">
-        <div
-          class="max-w-[1200px] mx-auto px-6 py-28 md:py-36 flex flex-col items-center"
-        >
-          <h2
-            class="text-white uppercase tracking-[0.08em] font-bold text-[28px] md:text-[42px] leading-[1.2]  "
-          >
-            Angelika Prudnikovanın  haqqında
-          </h2>
-          <span class="text-white/80 text-[14px] md:text-[16px] tracking-[0.1em] uppercase mt-6 mb-10 block">
-Eksklüziv dünya səviyyəli dizayn layihələri</span>
-
-          <div class="w-16 h-[1px] bg-white/40 my-6"></div>
-
-          <p class="text-white text-[16px] md:text-[18px] leading-[1.9]">
-            Angelika Prudnikovanın studiyası dəbdəbəli interyer və eksteryer layihələri yaradır və həyata keçirir. 25 il ərzində toplanmış geniş təcrübəmiz bizə yaşayış mənzilləri, evlər və ictimai məkanlar üçün yüksək keyfiyyətli 3D interyer dizayn layihələrini, həmçinin bağ evləri, yaşayış evləri, eksteryerlər və otellər üçün memarlıq layihələri və 3D rekonstruksiyalarını təqdim etməyə imkan verir. Həm böyük, həm də kiçik memarlıq xüsusiyyətləri üçün 3D landşaft dizaynını da təklif edirik!
-          </p>
-
-          <a
-            href="#"
-            class="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/10 text-white text-[13px] tracking-[0.12em] uppercase hover:bg-white hover:text-black transition-all duration-300"
-          >
-            ПОСМОТРЕТЬ ПРИМЕРЫ
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </section>
+           
       <!--slider-->
 
       <section class="bg-[#242429] relative z-20 ">
          <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/f4f/vvsdbj8w339d159xogb3pj9iaap0enb7/slider_2_7.jpg" alt=""></div>
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/5e5/z1jhpm2b53wm06gh3w3rpbwji6y92jed/slider_2_1.jpg" alt=""></div>
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/e3d/84ycl0l3n7hkseajzgvjm1nj9h611jto/slider_2_2.jpg" alt=""></div>
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/737/u46vz94uh3e136mmc7y3l74tzrvv7v5w/slider_2_3.jpg" alt=""></div>
-          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/medialibrary/944/am7zqonxz37njk97f6guyyf9io96rd4n/slider_2_4.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/5d2/huxn7cngm7m09d3cj2xfb5plevdhwzm1/slider_2_5.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/medialibrary/aaa/hswt8drv474rblse0181k5fshlia2cst/slider_2_6.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/65c/6q46xexmxut736xcm44yc1z9cay9oatz/1920_1280_1d266f97cdd5af74866fe3c458925588b/1.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/7d2/fugptc5cp9xdiwbm1040yhezz7hz2l20/1920_1280_1d266f97cdd5af74866fe3c458925588b/2.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/288/jx3u6qfnlcpufb6vttad9dde8uwftkxp/1920_1280_1d266f97cdd5af74866fe3c458925588b/3.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/fbf/1v26xi0cmshs11el0nptquwuf22vs1t4/1920_1280_1d266f97cdd5af74866fe3c458925588b/4.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/aef/q24eiu2n8e355jqwnjnnj5k9cnbba3ur/1920_1280_1d266f97cdd5af74866fe3c458925588b/5.jpg" alt=""></div>
+          <div class="swiper-slide "><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/837/5fwwsufoy16irjvshcscob21y05og8kt/1920_1280_1d266f97cdd5af74866fe3c458925588b/6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/c36/74d0ub3krwedwpmb0hg80dlczjyko424/1920_1280_1d266f97cdd5af74866fe3c458925588b/7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/5ad/q6lbqk7cwwk9vnsv9ek47sktgriuhf3h/1920_1280_1d266f97cdd5af74866fe3c458925588b/9.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://angelika-prudnikova.design/upload/resize_cache/iblock/60b/1geoi8fd060mprand1hej98a7yirjekl/1920_1280_1d266f97cdd5af74866fe3c458925588b/10.jpg" alt=""></div>
         </div>
         <div class="swiper-button-next color"></div>
         <div class="swiper-button-prev color"></div>
@@ -1125,6 +1101,136 @@ Eksklüziv dünya səviyyəli dizayn layihələri</span>
       </section>
 
       <!--projects-->
+     <section class="bg-[#242429] relative z-20 w-full py-10 md:py-14">
+  <div class="max-w-[1400px] mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/aef/q24eiu2n8e355jqwnjnnj5k9cnbba3ur/1920_1280_1d266f97cdd5af74866fe3c458925588b/5.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/aef/q24eiu2n8e355jqwnjnnj5k9cnbba3ur/1920_1280_1d266f97cdd5af74866fe3c458925588b/5.jpg"
+          alt="Interior 2"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/837/5fwwsufoy16irjvshcscob21y05og8kt/1920_1280_1d266f97cdd5af74866fe3c458925588b/6.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/837/5fwwsufoy16irjvshcscob21y05og8kt/1920_1280_1d266f97cdd5af74866fe3c458925588b/6.jpg"
+          alt="Interior 3"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/c36/74d0ub3krwedwpmb0hg80dlczjyko424/1920_1280_1d266f97cdd5af74866fe3c458925588b/7.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/c36/74d0ub3krwedwpmb0hg80dlczjyko424/1920_1280_1d266f97cdd5af74866fe3c458925588b/7.jpg"
+          alt="Interior 4"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/837/5fwwsufoy16irjvshcscob21y05og8kt/1920_1280_1d266f97cdd5af74866fe3c458925588b/6.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/837/5fwwsufoy16irjvshcscob21y05og8kt/1920_1280_1d266f97cdd5af74866fe3c458925588b/6.jpg"
+          alt="Interior 5"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg"
+          alt="Interior 6"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/5ad/q6lbqk7cwwk9vnsv9ek47sktgriuhf3h/1920_1280_1d266f97cdd5af74866fe3c458925588b/9.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/5ad/q6lbqk7cwwk9vnsv9ek47sktgriuhf3h/1920_1280_1d266f97cdd5af74866fe3c458925588b/9.jpg"
+          alt="Interior 7"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/60b/1geoi8fd060mprand1hej98a7yirjekl/1920_1280_1d266f97cdd5af74866fe3c458925588b/10.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/60b/1geoi8fd060mprand1hej98a7yirjekl/1920_1280_1d266f97cdd5af74866fe3c458925588b/10.jpg"
+          alt="Interior 8"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/283/wvtu76slqlhl0xrtz3uuj3pzw4y1uh6w/1920_1280_1d266f97cdd5af74866fe3c458925588b/8.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/ee2/kikh3c2o2one9ua26h14bmyzbhynuyml/900_544_2/12.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/ee2/kikh3c2o2one9ua26h14bmyzbhynuyml/900_544_2/12.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/097/o9m1rgl0gydoos4ddax7hv52w3aidzdr/900_544_2/14.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/097/o9m1rgl0gydoos4ddax7hv52w3aidzdr/900_544_2/14.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/039/1id9i48mi35f85coq2va2ky3fejq9jm8/900_544_2/13.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/039/1id9i48mi35f85coq2va2ky3fejq9jm8/900_544_2/13.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/213/9o1w77xd1m2bdn1mu85lrch9fc0ah1gr/900_544_2/16.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/213/9o1w77xd1m2bdn1mu85lrch9fc0ah1gr/900_544_2/16.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/e6e/y0jmx6352z4p9lhgqr9i06zoe54a4wcv/900_544_2/15.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/e6e/y0jmx6352z4p9lhgqr9i06zoe54a4wcv/900_544_2/15.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/211/ag242bzdw0os20828mit1ilvpr1825mo/900_544_2/17.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/211/ag242bzdw0os20828mit1ilvpr1825mo/900_544_2/17.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+       <a href="https://angelika-prudnikova.design/upload/resize_cache/iblock/aef/q24eiu2n8e355jqwnjnnj5k9cnbba3ur/1920_1280_1d266f97cdd5af74866fe3c458925588b/5.jpg" data-fancybox="gallery" class="group block overflow-hidden">
+        <img
+          src="https://angelika-prudnikova.design/upload/resize_cache/iblock/aef/q24eiu2n8e355jqwnjnnj5k9cnbba3ur/1920_1280_1d266f97cdd5af74866fe3c458925588b/5.jpg"
+          alt="Interior 1"
+          class="w-full aspect-[2/1] object-cover cursor-pointer transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  
+     <!--projects-->
       <section class="bg-[#242429] relative z-20">
         <div class="pt-16 pb-16">
           <div class="max-w-[1300px] mx-auto px-6">
@@ -1132,18 +1238,87 @@ Eksklüziv dünya səviyyəli dizayn layihələri</span>
               <h2
                 class="font-bold text-[clamp(24px,4vw,48px)] tracking-[0.08em] uppercase pt-6 text-white"
               >
-                İnteryer dizayn qiymətləri
+                Лучшие проекты
               </h2>
               <p
                 class="text-[16px] tracking-[0.25em] uppercase text-white/40 mt-3"
               >
-                layihələrin növləri
-
+                Интерьеры класса люкс
               </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
+              <a
+                href="/dizajn-portfolio/dizayn-landshafta"
+                class="direction-item group relative overflow-hidden block"
+              >
+                <div class="bg-[#18181b] text-center px-6 pt-6 pb-6">
+                  <h3
+                    class="text-white text-[16px] md:text-[22px] font-bold uppercase tracking-[0.04em]"
+                  >
+                    ДИЗАЙН-ПРОЕКТ «ЭКСПРЕСС»
+                  </h3>
+
+                  <p
+                    class="mt-2 text-white/40 text-[22px] md:text-[28px] font-light uppercase"
+                  >
+                    6500 Р/М²
+                  </p>
+                </div>
+                <div class="relative overflow-hidden aspect-[3/2]">
+                  <img
+                    src="../assets/img/express.jpg"
+                    alt="Ландшафтный дизайн"
+                    class="w-full h-full object-cover transition-transform duration-[8000ms] ease-out group-hover:scale-150"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#242429] via-[#242429]/20 to-transparent flex flex-col justify-end items-center text-center pl-6 py-6"
+                  >
+                    <span
+                      id="brd"
+                      class="inline-flex items-center justify-center h-[52px] px-10 text-[12px] font-semibold tracking-[0.14em] uppercase text-white border border-white/60 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
+                    >
+                      Подробнее
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="/dizajn-portfolio/dizayn-landshafta"
+                class="direction-item group relative overflow-hidden block"
+              >
+                <div class="bg-[#18181b] text-center px-6 pt-6 pb-6">
+                  <h3
+                    class="text-white text-[16px] md:text-[22px] font-bold uppercase tracking-[0.04em]"
+                  >
+                    Дизайн-проект «Престижный»
+                  </h3>
+
+                  <p
+                    class="mt-2 text-white/40 text-[22px] md:text-[28px] font-light uppercase"
+                  >
+                    8500 Р/М²
+                  </p>
+                </div>
+                <div class="relative overflow-hidden aspect-[3/2]">
+                  <img
+                    src="../assets/img/prestige.jpg "
+                    alt="Ландшафтный дизайн"
+                    class="w-full h-full object-cover transition-transform duration-[8000ms] ease-out group-hover:scale-150"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#242429] via-[#242429]/20 to-transparent flex flex-col justify-end items-center text-center pl-6 py-6"
+                  >
+                    <span
+                      id="brd"
+                      class="inline-flex items-center justify-center h-[52px] px-10 text-[12px] font-semibold tracking-[0.14em] uppercase text-white border border-white/60 rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
+                    >
+                      Подробнее
+                    </span>
+                  </div>
+                </div>
+              </a>
 
               <a
                 href="/dizajn-portfolio/realizovannye-obekty"
@@ -1184,100 +1359,8 @@ Eksklüziv dünya səviyyəli dizayn layihələri</span>
           </div>
         </div>
       </section>
-
-    <!--photo-->
-        <section
-      class="sticky top-0 w-full h-screen overflow-hidden bg-[#242429] z-10"
-    >
-      <div class="absolute inset-0 w-full h-full">
-        <img
-          src="https://angelika-prudnikova.design/upload/medialibrary/7ac/2ac9tfbze7x5m1p0qfvbuc35cwfoo8sc/imageshow_1.jpg"
-          alt="О компании"
-          class="w-full h-full object-cover object-center"
-        />
-      </div>
-
-      <div class="absolute inset-0 bg-black/30"></div>
-    </section>    
-   
           
-<section class="relative z-20 w-full bg-[#2d2f36] text-center">
-  <div class="max-w-[1400px] mx-auto px-6 py-24 md:py-28">
-    
-    <div class="mb-16 md:mb-20">
-      <p class="text-white/80 text-[12px] md:text-[14px] tracking-[0.45em] uppercase mb-3">
-        Luxury
-      </p>
 
-      <h2 class="text-white uppercase font-semibold  leading-[0.95] tracking-[0.03em] text-[42px] md:text-[68px] lg:text-[76px]">
-        Интерьеры и <br />
-        экстерьеры
-      </h2>
-
-      <p class="mt-4 text-white/50 text-[12px] md:text-[15px] tracking-[0.35em] uppercase">
-        Премиум-класса
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 text-left border-white/20 mb-10">
-      <div class="px-4 md:px-8 py-6 md:border-r md:border-white/20">
-        <h3 class="text-white text-[44px] md:text-[52px] font-bold leading-none">
-          25
-        </h3>
-        <p class="mt-2 text-white text-[14px] md:text-[16px] font-bold uppercase leading-[1.2]">
-          Лет работы
-        </p>
-        <p class="mt-4 text-white/60 text-[14px] leading-[1.5] max-w-[280px]">
-          Студия Анжелики Прудниковой успешно работает на российском рынке с 2000 года.
-        </p>
-      </div>
-
-      <div class="px-4 md:px-8 py-6 md:border-r md:border-white/20">
-        <h3 class="text-white text-[44px] md:text-[52px] font-bold leading-none">
-          2500+
-        </h3>
-        <p class="mt-2 text-white text-[14px] md:text-[16px] font-bold uppercase leading-[1.2]">
-          Объектов в портфолио
-        </p>
-        <p class="mt-4 text-white/60 text-[14px] leading-[1.5] max-w-[320px]">
-          Мы спроектировали тысячи домов, квартир и общественных помещений премиум-класса.
-        </p>
-      </div>
-
-      <div class="px-4 md:px-8 py-6">
-        <h3 class="text-white text-[34px] md:text-[46px] font-bold leading-none uppercase">
-          Проекты
-        </h3>
-        <p class="mt-2 text-white text-[14px] md:text-[16px] font-bold uppercase leading-[1.2]">
-          По всему миру
-        </p>
-        <p class="mt-4 text-white/60 text-[14px] leading-[1.5] max-w-[320px]">
-          Мы создаем проекты в России и СНГ, странах Ближнего Востока, Европы и Америки.
-        </p>
-      </div>
-    </div>
-
-    <div class="w-full h-px bg-white/20"></div>
-
-    <p class="py-4 text-white/40 text-[15px] md:text-[18px] italic font-serif">
-      Каждый месяц мы публикуем на сайте новые дизайн-проекты из портфолио студии.
-    </p>
-
-    <div class="w-full h-px bg-white/20 mb-6"></div>
-
-      <h3 class="text-white text-[28px] md:text-[42px]  uppercase tracking-[0.03em]">
-      Новинки из портфолио
-    </h3>
-
-    <a
-      href="#"
-      class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 hover:bg-white hover:text-black text-white text-[12px] md:text-[13px] font-semibold uppercase tracking-[0.08em] px-8 md:px-10 py-3 md:py-4 transition-all duration-300"
-    >
-      Перейти в раздел
-      <i class="fa-solid fa-arrow-right text-[12px]"></i>
-    </a>
-  </div>
-</section>
        
 
       <!--contact-->
@@ -1894,5 +1977,7 @@ Eksklüziv dünya səviyyəli dizayn layihələri</span>
     <script src="../assets/js/slideshow.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../assets/js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/js/fancy.js"></script>
   </body>
 </html>
